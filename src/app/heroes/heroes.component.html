@@ -4,5 +4,4 @@
     <span class="badge">{{myHero.id}}</span> {{myHero.name}}
   </li>
 </ul>
-<app-hero-detail [hero]= "selectedHero"></app-hero-detail>
-
+<app-hero-detail (messageToEmit)= "getMesaage($event)" [hero]= "selectedHero"></app-hero-detail>
